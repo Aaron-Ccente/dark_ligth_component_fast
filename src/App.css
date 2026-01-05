@@ -1,2 +1,18 @@
 @import "tailwindcss";
-@custom-variant dark (&:where(.dark, .dark *));
+
+:root{
+    --background: #1d28c6;
+    --text-primary: #fff;
+    --boton-danger: #bd2323;
+    --boton-send: #0f5a0d;
+}
+.dark{
+    --background: #000;
+    --text-primary: #fff;
+}
+@theme{
+    --color-background: var(--background);
+    --color-primary: var(--text-primary);
+    --color-boton-danger: var(--boton-danger);
+    --color-boton-send: var(--boton-send);
+}
